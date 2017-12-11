@@ -1,0 +1,102 @@
+.portfolio {
+    text-align: center; 
+    background-color: $light-gray;
+    padding: 5em 0 0; 
+}
+
+.portfolio-items {
+    display: flex;
+    flex-wrap: wrap;
+    @media screen and (min-width: 768px){
+        @include container($max-width: 90%);
+    }
+}
+
+.portfolio-item {
+    position: relative;
+    overflow: hidden;
+    margin: 0;
+    flex: 1 1 20rem; 
+    img {
+        display: block;
+        width: 100%;
+    }
+
+    figcaption{
+        position: absolute; 
+        top: 100%; 
+        bottom: 0; 
+        right: 0; 
+        left: 0;
+        background:rgba($accent, .75);
+        color: $white; 
+        text-align: left; 
+        display: flex; 
+        flex-direction: column;
+        padding: 2em;
+        transition: top ease-in-out 250ms;
+    }
+
+    &:hover figcaption, 
+    &:focus figcaption {
+        top: 0;
+    }
+}
+
+.portfolio-title {
+    color: $white; 
+    font-weight: 300;
+    font-size: 2.5rem;
+    margin-bottom: auto;
+}
+
+.portfolio-desc {
+    display: none;
+}
+
+.portfolio-link{
+    color: $white; 
+    font-weight: $fw-b;
+    font-size: 1.1rem;
+    text-decoration: none;
+    border-bottom: 2px solid $white; 
+    align-self: flex-start;
+    &::after {
+        content: url(../img/arrow-white.svg);
+        display: inline-block;
+        height: 1em; 
+        width: 1em;
+        margin-left: .5em;
+    }
+}
+
+@supports(display: grid){
+    .portfolio-items {
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+
+        @media screen and (min-width:480px) {
+            grid-template-columns: repeat(2,1fr);
+
+            .portfolio-item.featured {
+                grid-column: 1/span 2; 
+                grid-row: 1/span 2;
+            }
+
+            .portfolio-item.featured {
+                .portfolio-title {
+                font-size: 5rem;
+                }
+
+                .portfolio-desc {
+                    display: block;
+                }
+            }
+        }
+
+        @media screen and (min-width: 768px){
+            grid-template-rows: repeat(2,1fr);
+            grid-template-columns: repeat(4,1fr);
+        }
+    }
+}

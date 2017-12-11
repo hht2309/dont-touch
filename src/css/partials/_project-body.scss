@@ -1,0 +1,56 @@
+.project-body {
+    background: rgb(255, 255, 255);
+    max-width: 960px;
+    margin: 0 auto; 
+    border-radius: 1em;  
+    padding: 2em;
+
+    .project-name {
+        font-size: 2rem;
+
+        @media only screen and (min-width: 480px){ 
+            font-size: 2.5rem; 
+        }
+
+        @media only screen and (min-width: 768px){
+            font-size: 3rem;
+        }
+    }
+
+    .project-desc, .project-techno{
+        font-size: 0.8rem; 
+
+        @media only screen and (min-width: 480px){
+            font-size: 1.1rem; 
+        }
+
+        @media only screen and (min-width: 768px){
+            font-size: 1.5rem; 
+        }
+
+    }
+
+    .project-demo-btn{
+        display: inline-block; 
+        padding: 0.5em; 
+        color: white; 
+        font-size: 0.8rem;
+        background: $accent;
+        text-decoration: none; 
+        text-transform: uppercase;
+        border-radius: 0.2em;
+
+        @media only screen and (min-width: 480px){
+            font-size: 1.1rem;
+        }
+
+        @media only screen and (min-width: 768px){
+            font-size: 1.5rem;
+        }
+    }
+
+
+
+
+
+}

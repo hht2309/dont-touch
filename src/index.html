@@ -1,0 +1,472 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="icon" href="./img/favicon.ico" type="image/x-icon" />
+        <title>Portfolio</title>
+    </head>
+
+    <body>
+      <header>
+          <nav>
+              <ul>
+                <li class="link-active"><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+              </ul>
+            </nav>
+      </header>
+
+      <div class="nav-side">
+
+        <input type="checkbox"/>
+
+        <span></span>
+        <span></span>
+        <span></span>
+
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <div class="white-circle">
+        </div>
+        
+      </div>
+
+      <!-- <img style="display:none" src="./favicon.ico" alt=""> -->
+
+      <div class="welcome parallax--bg" id="home">
+        <h1>Welcome to my<span>Portfolio</span></h1>
+      </div>
+
+      <section class="section-main intro parallax--box">
+        <div class="intro-left">
+          <img src="img/macbook-on-table.jpg" alt="">
+        </div>
+        <div class="intro-middle">
+            <p>" Sometimes when you innovate, you make mistakes. It is best to admit them quickly, and get on with improving your other innovations. "</p>
+            <p>Steve Jobs</p>
+          </div>
+        <div class="intro-right">
+          <img src="img/imac-on-table.jpg" alt="">
+        </div>
+      </section>
+
+      <section class="section-main about-me" id="about">
+        <div class="about-img-container">
+          <img class="about-img" src="img/trong-profile.png" alt="">
+          <a href="" id="view-cv-btn">My CV</a>
+        </div>
+        <h1 class="about-title">Trong's Portfolio</h1>
+        <h2 class="about-subtitle">Web Developer</h2>
+        <div class="about-text">
+            <p>Hello and welcome to my portfolio. My name is Huynh Huu Trong, and I am a fresh graduate student from University Paris 13 majoring in Network and Image Engineering. I have always had a passion for web development, especially for front-end design. I love to create beautiful, fully responsive and user-friendly website based on HTML5 and CSS3. I also spend my time learning about modern web application by using some JavaScript-based frameworks such as jQuery, Angular, React, Vue, etc. My knowledge in network (TCP/IP, HTTP, IPv4, IPv6, Router, Switch, etc) gives me many advantages to adapt myself quickly to web development field. 
+                <br>
+            I created this portfolio website to expose some of my work and accomplishments, as well as to express my career goal. For this purpose, I invite you to learn more about my background, my skills, and my experience by clicking on the "My CV" button next to my portrait, or you can explore some projects that I have built in the portfolio section. 
+                <br>
+            Thank you for visiting and taking the time to explore my website.</p>  
+        </div>
+      </section>
+
+      <section class="section-main portfolio" id="portfolio">
+        <h1>My Works</h1>
+        <div class="portfolio-items">
+
+          <!-- Portfolio item 1 -->
+          <figure class="portfolio-item featured">
+            <img src="img/music-is-life.jpg" alt="">
+            <figcaption>
+              <h2 class="portfolio-title">Search Music</h2>
+              <p class="portfolio-desc">This project is a web application implemented the Spotify API. It fetches the data from Spotify server according to the search input being artist name or track name ...</p>
+              <a href="#" class="portfolio-link" id="project-1-btn">More info</a>
+            </figcaption>
+          </figure>
+
+            <!-- Portfolio item 2 -->
+            <figure class="portfolio-item">
+              <img src="img/Speak-different-languages.jpg" alt="">
+              <figcaption>
+                <h2 class="portfolio-title">Translator</h2>
+                <p class="portfolio-desc">Project description</p>
+                <a href="#" class="portfolio-link" id="project-2-btn">More info</a>
+              </figcaption>
+            </figure>
+
+              <!-- Portfolio item 3 -->
+          <figure class="portfolio-item">
+              <img src="img/digital-library.png" alt="">
+              <figcaption>
+                <h2 class="portfolio-title">Digi Library</h2>
+                <p class="portfolio-desc">Project description</p>
+                <a href="#" class="portfolio-link" id="project-3-btn">More info</a>
+              </figcaption>
+            </figure>
+
+              <!-- Portfolio item 4 -->
+          <figure class="portfolio-item">
+              <img src="img/portfolio-04.jpg" alt="">
+              <figcaption>
+                <h2 class="portfolio-title">Project Name</h2>
+                <p class="portfolio-desc">Project description</p>
+                <a href="#" class="portfolio-link" id="project-4-btn">More info</a>
+              </figcaption>
+            </figure>
+
+              <!-- Portfolio item 5 -->
+          <figure class="portfolio-item">
+              <img src="img/portfolio-05.jpg" alt="">
+              <figcaption>
+                <h2 class="portfolio-title">Project Name</h2>
+                <p class="portfolio-desc">Project description</p>
+                <a href="#" class="portfolio-link" id="project-5-btn">More info</a>
+              </figcaption>
+            </figure>
+
+        </div>
+      </section>
+
+      <section class="section-main contact" id="contact">
+        <h1>Contact me</h1>
+        <form action="mailto:hht2309@gmail.com" method="post" enctype="text/plain">
+          <label for="name" class="name">Name
+            <input type="text" id="name">
+          </label>
+          
+          <label for="email" class="email">Email
+            <input type="email" id="email">
+          </label>
+
+          <label for="message" class="message">Message
+            <textarea name="message" id="message"></textarea>
+          </label>
+
+          <input type="submit" value="SEND" class="button">
+        </form>
+      </section>
+
+      <footer>
+        <p>Join me on social media</p>
+        <div class="social-icons">
+          <a  class="social-icon" href="https://linkedin.com/in/hht2309"  target="_blank">
+            <img src="img/in-icon.svg" alt="">
+          </a>
+
+          <a  class="social-icon" href="https://github.com/hht2309"  target="_blank">
+            <img src="img/github-icon.svg" alt="">
+          </a>
+
+          <a  class="social-icon" href="https://facebook.com/hht2309"  target="_blank">
+            <img src="img/fb-icon.svg" alt="">
+          </a>
+          
+        </div>
+        <p class="copyright">Copyright 2017</p>
+      </footer>
+
+      <div class="modal" id="cv-modal">
+        <div class="modal-content">
+          <span class="close-modal">&times;</span>
+            <div class="cv-modal-body">
+                <div class="wrapper">
+                    <div class="sidebar-wrapper">
+                        <div class="profile-container">
+                            <img class="profile img-circle" src="./img/profile.png" alt="" />
+                            <h1 class="name">Huynh Huu Trong</h1>
+                            <h3 class="tagline">Web Developer, Telecom Engineer</h3>
+                        </div>
+                        <!--//profile-container-->
+                
+                        <div class="contact-container container-block">
+                            <ul class="list-unstyled contact-list">
+                                    <li class="email"><i class="fa fa-location-arrow"></i><a href="">Paris, France</a></li>
+                                <li class="email"><i class="fa fa-envelope"></i><a href="mailto: yourname@email.com">hht2309@gmail.com</a></li>
+                                <li class="phone"><i class="fa fa-phone"></i><a href="tel:0123 456 789">+33 7 68 89 61 18</a></li>
+                                <li class="website"><i class="fa fa-globe"></i><a href="http://www.huynh-huutrong.com" target="_blank">huynh-huutrong.com</a></li>
+                                <li class="linkedin"><i class="fa fa-linkedin"></i><a href="http://www.linkedin.com/in/hht2309" target="_blank">linkedin.com</a></li>
+                                <li class="github"><i class="fa fa-github"></i><a href="http://www.github.com/hht2309" target="_blank">github.com</a></li>
+                            </ul>
+                        </div>
+                        <!--//contact-container-->
+                        <div class="education-container container-block">
+                            <h2 class="container-block-title">Education</h2>
+                            <div class="item">
+                                <h4 class="degree">MSc in Images and Network Engineering</h4>
+                                <h5 class="meta"><a href="https://www.univ-paris13.fr/" target="_blank">University of Paris 13</a></h5>
+                                <div class="time">2016-2017</div>
+                            </div>
+                            <!--//item-->
+                            <div class="item">
+                                <h4 class="degree">BSc in Telecommunication</h4>
+                                <h5 class="meta"><a href="http://www.hcmut.edu.vn/en" target="blank">HCM City University of Technology</a></h5>
+                                <div class="time">2011-2016</div>
+                            </div>
+                            <!--//item-->
+                        </div>
+                        <!--//education-container-->
+                
+                        <div class="languages-container container-block">
+                            <h2 class="container-block-title">Languages</h2>
+                            <ul class="list-unstyled interests-list">
+                                <li>English <span class="lang-desc">(Proficient)</span></li>
+                                <li>French <span class="lang-desc">(Proficient)</span></li>
+                                <li>Vietnamese <span class="lang-desc">(Native)</span></li>
+                            </ul>
+                        </div>
+                        <!--//interests-->
+                
+                        <div class="interests-container container-block">
+                            <h2 class="container-block-title">Interests</h2>
+                            <ul class="list-unstyled interests-list">
+                                <li>Speedcubing</li>
+                                <li>Gaming</li>
+                                <li>Cooking</li>
+                                <li>Reading</li>
+                                <li>Traveling</li>
+                            </ul>
+                        </div>
+                        <!--//interests-->
+                
+                    </div>
+                    <!--//sidebar-wrapper-->
+                
+                    <div class="main-wrapper">
+                
+                        <section class="section summary-section">
+                            <h2 class="section-title"><i class="fa fa-user"></i>Personal Profile</h2>
+                            <div class="summary">
+                                <p>Hello and welcome to my personal website. My name is Trong, I'm a fresh graduate student with a bachelor's degree in Telecommunication. I'm passionate about web technology, networking and image processing. I have an open mind with strong technical skills to problem-solving, I love to be challenged in order to grow and improve my personal and professional skills. To this end, I'm seeking now a position as a web developer or image processing engineer.</p>
+                            </div>
+                        </section>
+                
+                        <section class="section experiences-section">
+                            <h2 class="section-title"><i class="fa fa-briefcase"></i>Experiences</h2>
+                
+                            <div class="item">
+                                <div class="meta">
+                                    <div class="upper-row">
+                                        <h3 class="job-title">Internship: Web Developer on X3DPhoto Application</h3>
+                                        <div class="time">March - August 2017</div>
+                                    </div>
+                                    <!--//upper-row-->
+                                    <div class="company"><a href="http://www.3ds.com" target="_blank">Dassault Systèmes</a>, Paris</div>
+                                </div>
+                                <!--//meta-->
+                                <div class="details">
+                                    <p>X3DPhoto is a web application developed by X3DPhoto team in CATIA Web Application department. This application allows the users to perform the 3D modeling process, such as 3D reconstruction from multiple images, directly from browser.
+                                    </p>
+                                    <p>During the internship, my main mission is to implement the application tool for painting/texturing 3D object. In this context, my works go with specifying the tool components, creating the user interface and testing the functionality of the tool in the application. </p>
+                                    <p> <strong>Technos</strong>: HTML5, CSS3, JavaScript, ThreeJS, WebGL, Karma-Jasmine, etc.</p>
+                                </div>
+                                <!--//details-->
+                            </div>
+                            <!--//item-->
+                
+                            <div class="item">
+                                <div class="meta">
+                                    <div class="upper-row">
+                                        <h3 class="job-title">Internship: Research Engineer</h3>
+                                        <div class="time">February - August 2016</div>
+                                    </div>
+                                    <!--//upper-row-->
+                                    <div class="company">
+                                        <a target="_blank" href="http://www-l2ti.univ-paris13.fr/site/index.php/en/">Laboratoire de Traitement et Transport de l'Information</a>, University of Paris 13</div>
+                                </div>
+                                <!--//meta-->
+                                <div class="details">
+                                    <p>This is the internship at the end of my BSc program. It is in the image processing field and the topic is Image denoising using the theory of Sparse Learning Dictionary. My works go with studying some state of the art method in Learning Dictionary such as K-SVD, MOD, etc, developing an algorithm based on these methods and testing the performance of this algorithm.</p>
+                                    <p> <strong> Environment</strong>: Matlab, C/C++. </p>
+                                </div>
+                                <!--//details-->
+                            </div>
+                            <!--//item-->
+                
+                        </section>
+                        <!--//section-->
+                
+                        <section class="section projects-section">
+                            <h2 class="section-title"><i class="fa fa-archive"></i>Projects</h2>
+                            <div class="intro">
+                                <p>Below is list of some projects developed during my study or in my free time: </p>
+                            </div>
+                            <!--//intro-->
+                            <div class="item">
+                                <span class="project-title"><a href="https://search-music-on-spotify.herokuapp.com" target="_blank">Search Music On Spotify</a></span> - <span class="project-tagline">This project is an web application implemented the Spotify API. It fetches the data from Spotify server according to the search input being artist name or track name. Using this application, you can find all albums of artist, or list all songs with given track name, then listen to the preview or explore them on <a href="http://www.spotify.com" target="_blank">Spotify</a> website. </span>
+                                <br>
+                                <span class="project-tagline">I built this application by using HTML5, CSS3, Nodejs, Angular4 and Heroku for web hosting service. Souce code can be found on <a href="https://github.com/hht2309/takeacoffee" target="_blank">GitHub</a> </span>.
+                            </div>
+                            <!--//item-->
+                            <div class="item">
+                                <span class="project-title"><a target="_blank" href="https://intense-waters-48093.herokuapp.com">Digi Library</a></span> - <span class="project-tagline">The objective of this project is to build a web application which provides the functionality for management of a local library, e.g., show what books are available, allow new books to be created, update the status of the copies (available, maintenance), etc.
+                                    <br>
+                                The project is built using HTML5, CSS3, Nodejs, MongoDB, Pugjs and is hosted by <a href="http://www.heroku.com" target="_blank">Heroku</a> PaaS. Source code can be found on <a href="https://github.com/hht2309/express-local-library" target="_blank">GitHub</a></span>.
+                            </div>
+                            <!--//item-->
+                            <div class="item">
+                                <span class="project-title"><a target="_blank" href="https://hht2309.github.io/tpaw2017/tp7/">Météo Application</a></span> - <span class="project-tagline">This project is built using the API provided by <a target="_blank" href="https://openweathermap.org/">openweathermap.com</a> to look for weather information of given location and display them by using HTML and CSS. Source code can be found <a target="_blank" href="https://github.com/hht2309/tpaw2017/tree/master/tp7">GitHub</a></span>.
+                            </div>
+                
+                        </section>
+                        <!--//section-->
+                
+                
+                        <section class="skills-section section">
+                            <h2 class="section-title"><i class="fa fa-rocket"></i>Skills &amp; Proficiency</h2>
+                            <div class="skillset">
+                                <div class="item">
+                                    <h3 class="level-title">C &amp; C++</h3>
+                                    <div class="progress">
+                                        <div class="progress-bar" style="width: 60%;">hide</div>
+                                    </div>
+                                    <!--//level-bar-->
+                                </div>
+                                <!--//item-->
+                
+                
+                                <div class="item">
+                                    <h3 class="level-title">Java</h3>
+                                    <div class="progress">
+                                        <div class="progress-bar" style="width: 65%;">hide</div>
+                                    </div>
+                                    <!--//level-bar-->
+                                </div>
+                                <!--//item-->
+                
+                                <div class="item">
+                                    <h3 class="level-title">JavaScript</h3>
+                                    <div class="progress">
+                                        <div class="progress-bar" style="width: 70%;">hide</div>
+                                    </div>
+                                    <!--//level-bar-->
+                                </div>
+                                <!--//item-->
+
+                                <div class="item">
+                                        <h3 class="level-title">SQL</h3>
+                                        <div class="progress">
+                                            <div class="progress-bar" style="width: 71%;">hide</div>
+                                        </div>
+                                        <!--//level-bar-->
+                                    </div>
+                                <!--//item-->
+                
+                                <div class="item">
+                                    <h3 class="level-title">HTML5 &amp; CSS3</h3>
+                                    <div class="progress">
+                                        <div class="progress-bar" style="width: 73%;">hide</div>
+                                    </div>
+                                    <!--//level-bar-->
+                                </div>
+                                <!--//item-->
+                
+                                <div class="item">
+                                    <h3 class="level-title">jQuery</h3>
+                                    <div class="progress">
+                                        <div class="progress-bar" style="width: 75%;">hide</div>
+                                    </div>
+                                    <!--//level-bar-->
+                                </div>
+                                <!--//item-->
+                
+                                <div class="item">
+                                    <h3 class="level-title">Angular2,4</h3>
+                                    <div class="progress">
+                                        <div class="progress-bar" style="width: 76%;">hide</div>
+                                    </div>
+                                    <!--//level-bar-->
+                                </div>
+                                <!--//item-->
+
+                                <div class="item">
+                                        <h3 class="level-title">Nodejs</h3>
+                                        <div class="progress">
+                                            <div class="progress-bar" style="width: 77%;">hide</div>
+                                        </div>
+                                        <!--//level-bar-->
+                                    </div>
+                                <!--//item-->
+                
+                
+                
+                
+                
+                            </div>
+                        </section>
+                        <!--//skills-section-->
+                
+                    </div>
+                    <!--//main-body-->
+                </div>
+            </div>
+        </div>
+      </div>
+
+      <div class="modal" id="project-1">
+          <div class="modal-content">
+              <span class="close-modal">&times;</span>
+              <div class="project-body">
+                <h1 class="project-name">Search Music App</h1>
+                <p class="project-desc"><strong>Description: </strong>This project is a web application implemented the Spotify API. It fetches the data from Spotify server according to the search input being artist name or track name. Using this application, you can find all albums of artist, or list all songs with given track name, then listen to the preview or explore them on <a href="http://www.spotify.com" target="_blank">Spotify</a> website.</p>
+                <p class="project-techno"><strong>Technos: </strong>HTML5, CSS3, Nodejs, Angular4 and Heroku for web hosting service. Souce code can be found on <a href="https://github.com/hht2309/takeacoffee" target="_blank">GitHub</a></p>
+                <a href="https://search-music-on-spotify.herokuapp.com" class="project-demo-btn" target="_blank">See demo</a>
+              </div>
+          </div>
+      </div>
+
+      <div class="modal" id="project-2">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="project-body">
+              <h1 class="project-name">Translate App</h1>
+              <p class="project-desc"><strong>Description: </strong>This project is an translate application using API provided by Yandex Translate API. You can enter a word or a paragraph into input field, then this input will be automatically translated into selected language (there are four of them: Russian, Spanish, French, and Chinese)</p>
+              <p class="project-techno"><strong></strong>Technos: HTML5, CSS3, Vuejs, hosted by <a href="http://www.heroku.com" target="_blank">Heroku</a> PaaS.</p>
+              <a href="https://translator-vuejs.herokuapp.com" class="project-demo-btn" target="_blank">See demo</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="project-3">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="project-body">
+              <h1 class="project-name">Digital Library App</h1>
+              <p class="project-desc"><strong>Description: </strong>The objective of this project is to build a web application which provides the functionality for management of a local library, e.g., show what books are available, allow new books to be created, update the status of the copies (available, maintenance), etc.</p>
+              <p class="project-techno"><strong>Technos: </strong>HTML5, CSS3, Nodejs, MongoDB, Pugjs and hosted by <a href="http://www.heroku.com" target="_blank">Heroku</a> PaaS. Source code can be found on <a href="https://github.com/hht2309/express-local-library" target="_blank">GitHub</a></p>
+              <a href="https://digital-library-nodejs.herokuapp.com/" class="project-demo-btn" target="_blank">See demo</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="project-4">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="project-body">
+              <h1 class="project-name">Project's Name: Project 4</h1>
+              <p class="project-desc"><strong>Description: </strong></p>
+              <p class="project-techno"><strong>Technos: </strong></p>
+              <a href="https://search-music-on-spotify.herokuapp.com" class="project-demo-btn" target="_blank">See demo</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="project-5">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="project-body">
+              <h1 class="project-name">Project's Name: Project 5</h1>
+              <p class="project-desc"><strong>Description: </strong></p>
+              <p class="project-techno"><strong>Technos: </strong></p>
+              <a href="https://search-music-on-spotify.herokuapp.com" class="project-demo-btn" target="_blank">See demo</a>
+            </div>
+        </div>
+    </div>
+
+
+    </body>
+</html>

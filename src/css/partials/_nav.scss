@@ -1,0 +1,175 @@
+header {
+    position: fixed; 
+    left: 0; 
+    right: 0;
+    padding: 1em;
+    z-index: 1;
+    background: rgba($dark-blue,0.4);
+    display: none;
+    
+    & nav {
+        & ul {
+            margin: 0; 
+            padding: 0; 
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+        }
+    
+        & li {
+            margin: 0 2em;
+            border-radius: 4px;
+            transition: background 1s ease;
+        }
+    
+        & a {
+            @include sans-serif($ls: 0.3em, $fs: 1.75rem, $lh: 1.3, $color: rgba($white,0.8));
+            text-decoration: none;
+            padding: .5em;
+            &:hover, 
+            &focus {
+               color: rgba($white, 1);
+            }
+            transition: color 1s ease;
+        }
+    }
+}
+
+.nav-side {
+    display: block; 
+    position: fixed;
+    top: 30px; 
+    left: 30px; 
+    z-index: 1; 
+    user-select: none;
+
+    & .white-circle {
+        display: block; 
+        position: absolute;
+        top: -12px; 
+        left: -5px;
+        width: 50px; 
+        height: 50px; 
+        background: red;
+        z-index: 0;
+        border-radius: 100%;
+        background: rgba($white, 0.5);
+        transition: opacity 0.5 ease;
+    }
+
+    & input {
+        display: block; 
+        width: 40px; 
+        height: 30px; 
+        position: absolute; 
+        top: 0px; 
+        left: 0px;
+        cursor: pointer;
+        opacity: 0; 
+        z-index: 2;
+    }
+
+    & span {
+        display: block; 
+        width: 40px; 
+        height: 4px; 
+        margin-bottom: 7px; 
+        position: relative;
+        background: $dark-blue;
+        border-radius: 4px;
+        z-index: 1;
+        transform-origin: 4px 0px; 
+        transition: transform 0.5s ease, 
+                    opacity 0.55s ease,
+                    background 0.5s ease;
+    }
+
+    & span:first-child
+    {
+      transform-origin: 0% 0%;
+    }
+    
+    & span:nth-last-child(3)
+    {
+      transform-origin: 0% 100%;
+    }
+
+    & input:checked ~ span
+    {
+      opacity: 1;
+      transform: rotate(45deg) translate(-2px, -1px);
+      background: rgba($white, 1);
+    }
+
+    & input:checked ~ span:nth-last-child(4)
+    {
+      opacity: 0;
+      transform: rotate(0deg) scale(0.2, 0.2);
+    }
+
+    & input:checked ~ span:nth-last-child(3)
+    {
+      transform: rotate(-45deg) ;
+    }
+
+    & li {
+        border-radius: 4px;
+        transition: background 1s ease;
+    }
+    
+    & ul {
+        position: fixed;
+        top: 0;
+        left: 0;
+        margin: 0;
+        width: 70vw;
+        height: 80vh;
+        background: rgba($dark-blue,0.8);
+        transform-origin: 0% 0%;
+        transform: translate(-100%, 0);
+        transition: transform 0.5s ease;
+        list-style-type: none;
+        display: flex; 
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        
+        & a{
+            display: block;
+            text-decoration: none;
+            @include sans-serif($fs: 1.5rem, $lh: 0.8, $color: rgba($white,1));
+            padding: 0.5em;
+            transition: color 1s ease;
+        }
+    }
+
+    & input:checked ~ ul{
+      transform: none;
+    }
+
+    & input:checked ~ div {
+        opacity: 0;
+    }
+    
+
+
+}
+
+li.link-active {
+    background: rgba($white, 0.8);
+    & a{
+        color: black;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+
+    .nav-side{
+        display: none;
+    }
+
+    header {
+        display: block;
+    }
+}

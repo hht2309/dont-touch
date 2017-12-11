@@ -1,0 +1,13 @@
+$fa-font-path: "~font-awesome/fonts";
+@import "~font-awesome/scss/font-awesome.scss";
+@import 'base'; 
+@import 'nav';
+@import 'intro';
+@import 'welcome';
+@import 'about-me'; 
+@import 'portfolio';
+@import 'contact';
+@import 'footer';
+@import 'modal-base';
+@import 'cv-modal';
+@import 'project-body';
